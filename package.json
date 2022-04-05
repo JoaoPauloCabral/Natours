@@ -1,0 +1,18 @@
+{
+    "name": "natours",
+    "version": "1.0.0",
+    "description": "Sass/HTML study purpose project",
+    "scripts": {
+        "scss": "node-sass scss/main.scss style.css -w"
+    },
+    "author": "João Paulo Cabral",
+    "homepage": "https://github.com/JoaoPauloCabral/Natours/blob/main/README.md",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/JoaoPauloCabral/Natours"
+    },
+    "license": "ISC",
+    "devDependencies": {
+        "node-sass": "^7.0.1"
+    }
+}
