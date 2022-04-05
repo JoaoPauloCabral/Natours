@@ -1,2 +1,2 @@
 # Natours
- Study purpose repository
+This is a HTML/Sass study purpose repository. You can see it live [here]()!
