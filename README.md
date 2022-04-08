@@ -1,7 +1,7 @@
 # Natours
 This is a study purpose repository. You can see it live [here]()!
 
-## Technologies
+## Features
 
 - HTML5
 - Sass (SCSS)
