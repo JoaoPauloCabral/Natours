@@ -1,0 +1,60 @@
+.story {
+    font-size: $default-font-size;
+    width: 75%;
+    margin: 0 auto;
+    box-shadow: 0 3rem 6rem rgba($color-black, 0.1);
+    background-color: rgba($color-white, 0.6);
+    border-radius: 0.3rem;
+    padding: 6rem 6rem 6rem 9rem;
+    transform: skewX(-12deg);
+
+    &:not(:last-child) {
+        margin-bottom: 6rem;
+    }
+
+    & > * {
+        transform: skewX(12deg);
+    }
+
+    &__person {
+        width: 15rem;
+        height: 15rem;
+        background-color: red;
+        float: left;
+        shape-outside: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        transform: translateX(-3rem);
+        position: relative;
+    }
+
+    &__person-photo {
+        height: 100%;
+        transform: translate(-4rem) scale(1.4);
+        transition: all 0.5s;
+    }
+
+    &__person-name {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        color: $color-white;
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        text-align: center;
+        opacity: 0;
+        transition: all 0.5s;
+    }
+
+    &:hover {
+        .story__person-name {
+            opacity: 1;
+            transform: translate(-50%, -50%);
+        }
+
+        .story__person-photo {
+            transform: translate(-4rem) scale(1);
+            filter: blur(0.3rem) brightness(80%);
+        }
+    }
+}

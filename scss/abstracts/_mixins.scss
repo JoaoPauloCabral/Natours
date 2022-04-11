@@ -1,0 +1,15 @@
+@mixin background-image--cover($url) {
+    background-image: $url;
+    background-size: cover;
+}
+
+@mixin mask-image--cover($url) {
+    @include background-image--cover($url);
+    @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+        background-image: none;
+        -webkit-mask-image: $url;
+        -webkit-mask-size: cover;
+        mask-image: $url;
+        mask-size: cover;
+    }
+}

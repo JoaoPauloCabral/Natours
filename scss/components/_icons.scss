@@ -1,0 +1,15 @@
+.icon-compass {
+    @include mask-image--cover(url(img/icons/basic_compass.svg));
+}
+
+.icon-heart {
+    @include mask-image--cover(url(img/icons/basic_heart.svg));
+}
+
+.icon-map {
+    @include mask-image--cover(url(img/icons/basic_map.svg));
+}
+
+.icon-world {
+    @include mask-image--cover(url(img/icons/basic_world.svg));
+}
