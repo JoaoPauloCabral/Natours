@@ -13,3 +13,10 @@
         mask-size: cover;
     }
 }
+
+@mixin centerSelf {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
