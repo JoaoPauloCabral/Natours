@@ -2,7 +2,7 @@ html {
     font-size: 62.5%;
 
     @include respond($bp-lt, true) {
-        font-size: 87.5%;
+        font-size: 75%;
     }
 
     @include respond($bp-bg) {

@@ -104,7 +104,6 @@
 
     @include respond($bp-sl) {
         flex-direction: row;
-        gap: 0;
         flex-wrap: wrap;
 
         &__input-group {

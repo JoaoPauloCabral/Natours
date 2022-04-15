@@ -24,25 +24,8 @@
         }
 
         &--3-cols {
-            grid-template-columns: repeat(9, 1fr);
-            column-gap: 0;
-        }
-
-        &--4-cols {
-            grid-template-columns: repeat(2, 1fr);
-        }
-    }
-
-    @include respond($bp-sl) {
-        row-gap: 7rem;
-        columns-gap: 5rem;
-
-        &--2-cols {
             grid-template-columns: 1fr;
-        }
-
-        &--3-cols {
-            grid-template-columns: repeat(9, 1fr);
+            justify-items: center;
             column-gap: 0;
         }
 
@@ -54,6 +37,7 @@
     @include respond($bp-sl) {
         row-gap: 6rem;
         columns-gap: 5rem;
+        justify-items: center;
 
         &--3-cols {
             grid-template-columns: 1fr;
@@ -66,9 +50,5 @@
 
     @include respond($bp-sl) {
         row-gap: 4rem;
-
-        &--4-cols {
-            justify-items: center;
-        }
     }
 }
