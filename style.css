@@ -7,6 +7,9 @@
 
 body {
   padding: 3rem; }
+  @media (max-width: 47em) {
+    body {
+      padding: 0; } }
 
 @keyframes moveInLeft {
   0% {
@@ -89,7 +92,7 @@ html {
       font-size: 87.5%; } }
   @media (max-width: 80em) {
     html {
-      font-size: 53%; } }
+      font-size: 56.25%; } }
   @media (max-width: 47em) {
     html {
       font-size: 50%; } }
@@ -476,6 +479,9 @@ body {
   @media (max-width: 36em) {
     .card {
       width: 54%; } }
+  @media (max-width: 26em) {
+    .card {
+      width: 70%; } }
 
 .story {
   font-size: 1.6rem;
@@ -522,7 +528,10 @@ body {
     filter: blur(0.3rem) brightness(80%); }
   @media (max-width: 36em) {
     .story {
-      width: 95%; } }
+      width: 95%;
+      transform: skewX(0); }
+      .story > * {
+        transform: skewX(0); } }
   @media (max-width: 26em) {
     .story {
       width: 100%; } }
@@ -953,7 +962,7 @@ body {
         column-gap: 3rem; } }
   @media (max-width: 26em) {
     .section-about {
-      padding: 29rem 0 46rem; } }
+      padding: 21rem 0 35rem; } }
 
 .section-features {
   padding: 25rem 0;

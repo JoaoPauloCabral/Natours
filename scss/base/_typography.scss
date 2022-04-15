@@ -6,7 +6,7 @@ html {
     }
 
     @include respond($bp-bg) {
-        font-size: 53%;
+        font-size: 56.25%;
     }
 
     @include respond($bp-sm) {

@@ -60,6 +60,10 @@
 
     @include respond($bp-sl) {
         width: 95%;
+        transform: skewX(0);
+        & > * {
+            transform: skewX(0);
+        }
     }
 
     @include respond($bp-tn) {

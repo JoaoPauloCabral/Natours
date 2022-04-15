@@ -8,4 +8,8 @@
 
 body {
     padding: 3rem;
+
+    @include respond($bp-sm) {
+        padding: 0;
+    }
 }

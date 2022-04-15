@@ -221,4 +221,8 @@
     @include respond($bp-sl) {
         width: 54%;
     }
+
+    @include respond($bp-tn) {
+        width: 70%;
+    }
 }
