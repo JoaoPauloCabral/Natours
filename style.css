@@ -294,19 +294,21 @@ body {
         transform: scale(0.95);
         left: 25%; } }
   @media (max-width: 36em) {
-    .composition__photo {
-      width: 40%; }
-      .composition__photo--p1, .composition__photo--p2, .composition__photo--p3 {
-        top: 0; }
-      .composition__photo--p1 {
-        left: 10%; }
-      .composition__photo--p2 {
-        left: 50%; }
-        .composition__photo--p2:hover {
-          transform: scale(1.05) translateY(-0.5rem) translateX(-50%); }
-      .composition__photo--p1:hover ~ .composition__photo--p3 {
-        transform: scale(0.95);
-        left: 10%; } }
+    .composition {
+      justify-self: normal; }
+      .composition__photo {
+        width: 40%; }
+        .composition__photo--p1, .composition__photo--p2, .composition__photo--p3 {
+          top: 0; }
+        .composition__photo--p1 {
+          left: 10%; }
+        .composition__photo--p2 {
+          left: 50%; }
+          .composition__photo--p2:hover {
+            transform: scale(1.05) translateY(-0.5rem) translateX(-50%); }
+        .composition__photo--p1:hover ~ .composition__photo--p3 {
+          transform: scale(0.95);
+          left: 10%; } }
 
 .icon-compass {
   background-image: url(img/icons/basic_compass.svg);
@@ -488,16 +490,15 @@ body {
         gap: 3rem; }
       .card__price-value {
         font-size: 4rem; } }
-  @media (max-width: 36em) {
-    .card {
-      width: 45%;
-      justify-self: center; } }
-  @media (max-width: 36em) {
+  @media (max-width: 47em) {
     .card {
       width: 54%; } }
-  @media (max-width: 26em) {
+  @media (max-width: 36em) {
     .card {
       width: 70%; } }
+  @media (max-width: 26em) {
+    .card {
+      width: 80%; } }
 
 .story {
   font-size: 1.6rem;
@@ -891,16 +892,13 @@ body {
         grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 36em) {
     .grid {
-      row-gap: 6rem;
+      row-gap: 4rem;
       columns-gap: 5rem;
       justify-items: center; }
       .grid--3-cols {
         grid-template-columns: 1fr; }
       .grid--4-cols {
         grid-template-columns: 1fr; } }
-  @media (max-width: 36em) {
-    .grid {
-      row-gap: 4rem; } }
 
 .footer {
   background-color: #333;
@@ -956,10 +954,11 @@ body {
           justify-self: self-start; } }
   @media (max-width: 47em) {
     .section-about {
-      margin-top: -18vh; } }
+      margin-top: -18vh;
+      padding: 21rem 0 32rem; } }
   @media (max-width: 36em) {
     .section-about {
-      padding: 25rem 0 50rem; }
+      padding: 19rem 0 41rem; }
       .section-about div:last-child div:first-child {
         display: grid;
         grid-template-columns: 1fr;

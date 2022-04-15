@@ -35,7 +35,7 @@
     }
 
     @include respond($bp-sl) {
-        row-gap: 6rem;
+        row-gap: 4rem;
         columns-gap: 5rem;
         justify-items: center;
 
@@ -46,9 +46,5 @@
         &--4-cols {
             grid-template-columns: 1fr;
         }
-    }
-
-    @include respond($bp-sl) {
-        row-gap: 4rem;
     }
 }

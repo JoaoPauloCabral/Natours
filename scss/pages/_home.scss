@@ -23,6 +23,7 @@
 
     @include respond($bp-sm) {
         margin-top: -18vh;
+        padding: 21rem 0 32rem;
     }
 
     @include respond($bp-sl) {
@@ -32,7 +33,7 @@
             column-gap: 3rem;
         }
 
-        padding: 25rem 0 50rem;
+        padding: 19rem 0 41rem;
     }
 
     @include respond($bp-tn) {

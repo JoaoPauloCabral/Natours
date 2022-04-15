@@ -76,6 +76,8 @@
     }
 
     @include respond($bp-sl) {
+        justify-self: normal;
+
         &__photo {
             width: 40%;
 
