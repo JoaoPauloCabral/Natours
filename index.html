@@ -114,17 +114,57 @@
 
                     <div class="composition">
                         <img
+                            srcset="
+                                img/nat-1.jpg        300w,
+                                img/nat-1-large.jpg 1000w
+                            "
                             src="img/nat-1-large.jpg"
-                            alt="River in middle of the mountains"
+                            sizes="
+                                (max-width: 80em) 21vw,
+                                (max-width: 65em) 23vw,
+                                (max-width: 47em) 23vw,
+                                (max-width: 36em) 36vw,
+                                (max-width: 26em) 34vw,
+                                23em
+                            "
                             class="composition__photo composition__photo--p1"
-                        /><img
+                            alt="River in middle of the mountains"
+                        />
+
+                        <img
+                            srcset="
+                                img/nat-2.jpg        300w,
+                                img/nat-2-large.jpg 1000w
+                            "
                             src="img/nat-2-large.jpg"
-                            alt="Cyclist on plain"
+                            sizes="
+                                (max-width: 80em) 21vw,
+                                (max-width: 65em) 23vw,
+                                (max-width: 47em) 23vw,
+                                (max-width: 36em) 36vw,
+                                (max-width: 26em) 34vw,
+                                23em
+                            "
                             class="composition__photo composition__photo--p2"
-                        /><img
+                            alt="Cyclist on plain"
+                        />
+
+                        <img
+                            srcset="
+                                img/nat-3.jpg        300w,
+                                img/nat-3-large.jpg 1000w
+                            "
                             src="img/nat-3-large.jpg"
-                            alt="Hiker in mountains"
+                            sizes="
+                                (max-width: 80em) 21vw,
+                                (max-width: 65em) 23vw,
+                                (max-width: 47em) 23vw,
+                                (max-width: 36em) 36vw,
+                                (max-width: 26em) 34vw,
+                                23em
+                            "
                             class="composition__photo composition__photo--p3"
+                            alt="Hiker in mountains"
                         />
                     </div>
                 </div>
@@ -447,7 +487,7 @@
                                         type="email"
                                         class="form__text-input"
                                         placeholder="Email address"
-                                        name="full-name"
+                                        name="email"
                                         required
                                     />
                                     <label for="email" class="form__text-label"
@@ -519,6 +559,7 @@
                             img/logo-green-1x.png 1x,
                             img/logo-green-2x.png 2x
                         "
+                        src="img/logo-green-1x.png"
                         alt="Full logo"
                     />
                 </picture>

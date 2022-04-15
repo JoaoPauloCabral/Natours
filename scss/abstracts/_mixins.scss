@@ -23,11 +23,11 @@
 
 @mixin respond($breakpoint, $min-mode: false) {
     @if $min-mode == true {
-        @media (min-width: $breakpoint) {
+        @media only screen and (min-width: $breakpoint) {
             @content;
         }
     } @else {
-        @media (max-width: $breakpoint) {
+        @media only screen and (max-width: $breakpoint) {
             @content;
         }
     }

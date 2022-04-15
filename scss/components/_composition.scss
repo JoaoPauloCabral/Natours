@@ -59,7 +59,7 @@
             }
 
             &--p3 {
-                top: -5rem;
+                top: -6rem;
                 left: 50%;
                 transform: translateX(-50%);
 
@@ -82,8 +82,7 @@
             width: 40%;
 
             &--p1,
-            &--p2,
-            &--p3 {
+            &--p2 {
                 top: 0;
             }
 
@@ -97,6 +96,10 @@
                 &:hover {
                     transform: scale(1.05) translateY(-0.5rem) translateX(-50%);
                 }
+            }
+
+            &--p3 {
+                top: -1rem;
             }
 
             &--p1:hover ~ &--p3 {
