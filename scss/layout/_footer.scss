@@ -49,4 +49,10 @@
         padding-top: 2rem;
         text-align: center;
     }
+
+    @include respond($bp-md) {
+        & div:last-child {
+            max-width: 62rem;
+        }
+    }
 }

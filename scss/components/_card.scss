@@ -190,4 +190,35 @@
         font-size: 6rem;
         font-weight: 100;
     }
+
+    @include respond($bp-md) {
+        &:nth-child(1) {
+            grid-column: 2 / 5;
+        }
+
+        &:nth-child(2) {
+            grid-column: 6 / 9;
+        }
+
+        &:nth-child(3) {
+            grid-column: 4 / 7;
+        }
+    }
+
+    @include respond($bp-sl) {
+        width: 45%;
+        justify-self: center;
+
+        &:nth-child(odd) {
+            grid-column: 1 / -1;
+        }
+
+        &:nth-child(even) {
+            grid-column: 1 / -1;
+        }
+    }
+
+    @include respond($bp-sl) {
+        width: 54%;
+    }
 }

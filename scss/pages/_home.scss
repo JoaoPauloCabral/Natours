@@ -1,7 +1,43 @@
 .section-about {
     background-color: $color-grey-light-1;
-    padding: 25rem 0;
+    padding: 25rem 0 25rem;
     margin-top: -20vh;
+
+    @include respond($bp-md) {
+        padding: 25rem 0 40rem;
+
+        & div:last-child div:first-child {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 3rem;
+
+            .paragraph:first-of-type {
+                grid-row: 2;
+            }
+
+            .btn-text {
+                justify-self: self-start;
+            }
+        }
+    }
+
+    @include respond($bp-sm) {
+        margin-top: -18vh;
+    }
+
+    @include respond($bp-sl) {
+        & div:last-child div:first-child {
+            display: grid;
+            grid-template-columns: 1fr;
+            column-gap: 3rem;
+        }
+
+        padding: 25rem 0 50rem;
+    }
+
+    @include respond($bp-tn) {
+        padding: 29rem 0 46rem;
+    }
 }
 
 .section-features {
@@ -22,17 +58,37 @@
             url('../img/nat-4.jpg')
         )
     );
+
+    @include respond($bp-sm) {
+        padding: 30rem 0;
+    }
 }
 
 .section-tours {
     background-color: $color-grey-light-1;
     padding: 25rem 0 15rem;
     margin-top: -20vh;
+
+    @include respond($bp-md) {
+        padding: 25rem 0 12rem;
+    }
+
+    @include respond($bp-tn) {
+        padding: 32rem 0 12rem;
+    }
 }
 
 .section-stories {
     padding: 15rem 0;
     position: relative;
+
+    @include respond($bp-sl) {
+        padding: 10rem 0;
+    }
+
+    @include respond($bp-tn) {
+        overflow: hidden;
+    }
 }
 
 .section-book {
@@ -42,6 +98,10 @@
         $color-primary-light,
         $color-primary-dark
     );
+
+    @include respond($bp-sl) {
+        padding: 10rem 0;
+    }
 }
 
 .book {
@@ -62,5 +122,49 @@
     &__form {
         width: 50%;
         padding: 6rem;
+    }
+
+    @include respond($bp-md) {
+        @include background-image--cover(
+            (
+                linear-gradient(
+                    105deg,
+                    rgba($color-white, 0.9) 0%,
+                    rgba($color-white, 0.9) 60%,
+                    transparent 60%
+                ),
+                url(img/nat-10.jpg)
+            )
+        );
+
+        &__form {
+            width: 65%;
+            padding: 6rem;
+        }
+    }
+
+    @include respond($bp-sl) {
+        @include background-image--cover(
+            (
+                linear-gradient(
+                    11deg,
+                    rgba($color-white, 0.9) 0%,
+                    rgba($color-white, 0.9) 60%,
+                    transparent 60%
+                ),
+                url(img/nat-10.jpg)
+            )
+        );
+
+        &__form {
+            width: 100%;
+            padding: 23rem 3rem 3rem 3rem;
+        }
+    }
+
+    @include respond($bp-tn) {
+        &__form {
+            padding: 28rem 3rem 3rem 3rem;
+        }
     }
 }

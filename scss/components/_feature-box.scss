@@ -21,4 +21,8 @@
             $color-primary-dark
         );
     }
+
+    @include respond($bp-sl) {
+        width: 75%;
+    }
 }

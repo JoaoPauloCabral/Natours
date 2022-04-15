@@ -1,5 +1,21 @@
 html {
     font-size: 62.5%;
+
+    @include respond($bp-lt, true) {
+        font-size: 87.5%;
+    }
+
+    @include respond($bp-lg) {
+        font-size: 50%;
+    }
+
+    @include respond($bp-sm) {
+        font-size: 37.5%;
+    }
+
+    @include respond($bp-tn) {
+        font-size: 31.25%;
+    }
 }
 
 body {
@@ -33,6 +49,14 @@ body {
             animation-delay: 3s;
             animation-iteration-count: 3
          */
+
+        @include respond($bp-sl) {
+            letter-spacing: 2.5rem;
+        }
+
+        @include respond($bp-tn) {
+            letter-spacing: 1.5rem;
+        }
     }
 
     &--sub {
@@ -42,6 +66,14 @@ body {
         letter-spacing: 1.74rem;
 
         animation: moveInRight 1s ease-out;
+
+        @include respond($bp-sl) {
+            letter-spacing: 1.5rem;
+        }
+
+        @include respond($bp-tn) {
+            letter-spacing: 1rem;
+        }
     }
 }
 
@@ -65,6 +97,14 @@ body {
         transform: skewY(2deg) skewX(15deg) scale(1.1);
         text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
     }
+
+    @include respond($bp-sl) {
+        line-height: 1.5;
+    }
+
+    @include respond($bp-tn) {
+        line-height: 1.2;
+    }
 }
 
 .heading-tertiary {
@@ -78,5 +118,9 @@ body {
 
     &:not(:last-child) {
         margin-bottom: 3rem;
+
+        @include respond($bp-sl) {
+            margin-bottom: 2rem;
+        }
     }
 }

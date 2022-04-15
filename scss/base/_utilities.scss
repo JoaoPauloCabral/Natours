@@ -1,24 +1,60 @@
 .u-container {
     max-width: 114rem;
     margin: 0 auto;
+
+    @include respond($bp-md) {
+        padding: 0 4rem;
+    }
 }
 
 .u-center-text {
     text-align: center !important;
+
+    @include respond($bp-sl) {
+        padding: 0 4rem !important;
+    }
 }
 
 .u-margin-bottom-bt {
     margin-bottom: 10rem !important;
+
+    @include respond($bp-md) {
+        margin-bottom: 8rem !important;
+    }
+
+    @include respond($bp-sl) {
+        margin-bottom: 6rem !important;
+    }
 }
 
 .u-margin-bottom-bg {
     margin-bottom: 8rem !important;
+
+    @include respond($bp-md) {
+        margin-bottom: 6rem !important;
+    }
 }
 
 .u-margin-bottom-md {
     margin-bottom: 4rem !important;
+
+    @include respond($bp-md) {
+        margin-bottom: 2rem !important;
+    }
+
+    @include respond($bp-sl) {
+        margin-bottom: 1.5rem !important;
+    }
 }
 
 .u-margin-bottom-sm {
     margin-bottom: 1.5rem !important;
+
+    @include respond($bp-md) {
+        margin-bottom: 1rem !important;
+    }
+
+    @include respond($bp-sl) {
+        margin-bottom: 0.5rem !important;
+    }
 }

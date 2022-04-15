@@ -57,4 +57,12 @@
             filter: blur(0.3rem) brightness(80%);
         }
     }
+
+    @include respond($bp-sl) {
+        width: 95%;
+    }
+
+    @include respond($bp-tn) {
+        width: 100%;
+    }
 }

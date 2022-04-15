@@ -92,4 +92,36 @@
         margin-top: 2rem;
         align-self: flex-start;
     }
+
+    @include respond($bp-md) {
+        gap: 1rem;
+
+        &__radio-group {
+            flex-direction: column;
+            gap: 1rem;
+        }
+    }
+
+    @include respond($bp-sl) {
+        flex-direction: row;
+        gap: 0;
+        flex-wrap: wrap;
+
+        &__input-group {
+            flex: 0 0 48%;
+        }
+
+        &__radio-group {
+            flex: auto;
+            margin-right: 6rem;
+            align-self: center;
+            flex-direction: row;
+        }
+    }
+
+    @include respond($bp-tn) {
+        &__radio-group {
+            margin-right: 0;
+        }
+    }
 }
