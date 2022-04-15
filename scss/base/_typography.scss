@@ -5,12 +5,12 @@ html {
         font-size: 87.5%;
     }
 
-    @include respond($bp-lg) {
-        font-size: 50%;
+    @include respond($bp-bg) {
+        font-size: 56.25%;
     }
 
-    @include respond($bp-tn) {
-        font-size: 37.5%;
+    @include respond($bp-sm) {
+        font-size: 50%;
     }
 }
 
@@ -47,7 +47,7 @@ body {
          */
 
         @include respond($bp-sl) {
-            letter-spacing: 2.5rem;
+            letter-spacing: 2rem;
         }
 
         @include respond($bp-tn) {
@@ -64,7 +64,7 @@ body {
         animation: moveInRight 1s ease-out;
 
         @include respond($bp-sl) {
-            letter-spacing: 1.5rem;
+            letter-spacing: 1.1rem;
         }
 
         @include respond($bp-tn) {

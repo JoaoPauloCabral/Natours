@@ -87,12 +87,12 @@ html {
   @media (min-width: 125em) {
     html {
       font-size: 87.5%; } }
-  @media (max-width: 100em) {
+  @media (max-width: 80em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 47em) {
     html {
       font-size: 50%; } }
-  @media (max-width: 26em) {
-    html {
-      font-size: 37.5%; } }
 
 body {
   font-family: 'Lato', sans-serif;
@@ -121,7 +121,7 @@ body {
          */ }
     @media (max-width: 36em) {
       .heading-primary--main {
-        letter-spacing: 2.5rem; } }
+        letter-spacing: 2rem; } }
     @media (max-width: 26em) {
       .heading-primary--main {
         letter-spacing: 1.5rem; } }
@@ -133,7 +133,7 @@ body {
     animation: moveInRight 1s ease-out; }
     @media (max-width: 36em) {
       .heading-primary--sub {
-        letter-spacing: 1.5rem; } }
+        letter-spacing: 1.1rem; } }
     @media (max-width: 26em) {
       .heading-primary--sub {
         letter-spacing: 1rem; } }
