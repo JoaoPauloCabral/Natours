@@ -9,12 +9,8 @@ html {
         font-size: 50%;
     }
 
-    @include respond($bp-sm) {
-        font-size: 37.5%;
-    }
-
     @include respond($bp-tn) {
-        font-size: 31.25%;
+        font-size: 37.5%;
     }
 }
 

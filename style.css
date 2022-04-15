@@ -90,12 +90,9 @@ html {
   @media (max-width: 100em) {
     html {
       font-size: 50%; } }
-  @media (max-width: 47em) {
-    html {
-      font-size: 37.5%; } }
   @media (max-width: 26em) {
     html {
-      font-size: 31.25%; } }
+      font-size: 37.5%; } }
 
 body {
   font-family: 'Lato', sans-serif;
