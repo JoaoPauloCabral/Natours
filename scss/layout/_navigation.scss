@@ -16,6 +16,11 @@
         z-index: 4;
         box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
         cursor: pointer;
+
+        @include respond($bp-sm) {
+            top: 3rem;
+            right: 3rem;
+        }
     }
 
     &__background {
@@ -31,6 +36,11 @@
         );
         z-index: 2;
         transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+
+        @include respond($bp-sm) {
+            top: 3.5rem;
+            right: 3.5rem;
+        }
     }
 
     &__nav {
