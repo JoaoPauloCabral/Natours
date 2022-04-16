@@ -1,6 +1,7 @@
 @use '../abstracts' as *;
 
 .header {
+    overflow: hidden;
     position: relative;
     height: 95vh;
     background-image: linear-gradient(
