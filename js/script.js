@@ -14,6 +14,6 @@ document.querySelector('.navigation__list').addEventListener('click', () => {
 const popupCloseButton = document.querySelector('.popup__close');
 document.querySelector('.popup').addEventListener('click', (event) => {
     if (event.target.className === 'popup') {
-        popupCloseButton.dispatchEvent(new MouseEvent('click'));
+        popupCloseButton.dispatchEvent(new PointerEvent('click'));
     }
 });
