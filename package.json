@@ -3,7 +3,12 @@
     "version": "1.0.0",
     "description": "Sass/HTML study purpose project",
     "scripts": {
-        "scss": "node-sass scss/main.scss style.css -w"
+        "watch:scss": "node-sass scss/main.scss style.css -w",
+        "compile:scss": "node-sass scss/main.scss style.comp.css",
+        "concat:css": "concat -o style.concat.css style.comp.css",
+        "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' style.concat.css -o style.prefix.css",
+        "compress:css": "node-sass style.prefix.css style.css --output-style compressed",
+        "build:css": "npm-run-all compile:scss concat:css prefix:css compress:css"
     },
     "author": "João Paulo Cabral",
     "homepage": "https://github.com/JoaoPauloCabral/Natours/blob/main/README.md",
@@ -13,6 +18,11 @@
     },
     "license": "ISC",
     "devDependencies": {
-        "node-sass": "^7.0.1"
+        "autoprefixer": "^10.4.4",
+        "concat": "^1.0.3",
+        "node-sass": "^7.0.1",
+        "npm-run-all": "^4.1.5",
+        "postcss": "^8.4.12",
+        "postcss-cli": "^9.1.0"
     }
 }

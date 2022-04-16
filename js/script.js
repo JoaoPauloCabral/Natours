@@ -9,3 +9,11 @@ document.querySelector('.navigation__list').addEventListener('click', () => {
         .querySelector('.navigation__button')
         .dispatchEvent(new MouseEvent('click'));
 });
+
+//Closes the popup when hitting outside it
+const popupCloseButton = document.querySelector('.popup__close');
+document.querySelector('.popup').addEventListener('click', (event) => {
+    if (event.target.className === 'popup') {
+        popupCloseButton.dispatchEvent(new MouseEvent('click'));
+    }
+});

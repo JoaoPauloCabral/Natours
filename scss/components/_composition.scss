@@ -84,6 +84,10 @@
             &--p1,
             &--p2 {
                 top: 0;
+
+                &:hover {
+                    top: -1rem;
+                }
             }
 
             &--p1 {
@@ -106,6 +110,10 @@
                 transform: scale(0.95);
                 left: 10%;
             }
+        }
+
+        &:hover &__photo:not(:hover) {
+            top: 0;
         }
     }
 }

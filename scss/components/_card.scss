@@ -191,8 +191,7 @@
         font-weight: 100;
     }
 
-    @include respond($bp-md) {
-        width: 45%;
+    @media only screen and ($bp-md), only screen and (hover: none) {
         height: auto;
         border-radius: 0.3rem;
         background-color: $color-white;
@@ -230,6 +229,10 @@
         &__price-value {
             font-size: 4rem;
         }
+    }
+
+    @include respond($bp-md) {
+        width: 45%;
     }
 
     @include respond($bp-sm) {
