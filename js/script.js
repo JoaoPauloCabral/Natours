@@ -7,7 +7,7 @@ copyrightYearEl.textContent = currentYear;
 document.querySelector('.navigation__list').addEventListener('click', () => {
     document
         .querySelector('.navigation__button')
-        .dispatchEvent(new MouseEvent('click'));
+        .dispatchEvent(new PointerEvent('click'));
 });
 
 //Closes the popup when hitting outside it
