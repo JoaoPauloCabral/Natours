@@ -1203,6 +1203,7 @@ body {
 }
 .footer__list {
   list-style: none;
+  text-align: center;
   display: flex;
   justify-content: center;
   gap: 1.5rem;
