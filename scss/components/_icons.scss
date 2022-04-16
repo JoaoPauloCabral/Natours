@@ -1,3 +1,5 @@
+@use '../abstracts' as *;
+
 .icon-compass {
     @include mask-image--cover(url(img/icons/basic_compass.svg));
 }

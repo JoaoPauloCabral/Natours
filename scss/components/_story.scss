@@ -1,3 +1,5 @@
+@use '../abstracts' as *;
+
 .story {
     font-size: $default-font-size;
     width: 75%;

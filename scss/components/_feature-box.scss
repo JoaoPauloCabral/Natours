@@ -1,3 +1,5 @@
+@use '../abstracts' as *;
+
 .feature-box {
     background-color: rgba($color-white, 0.8);
     font-size: 1.5rem;
