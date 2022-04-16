@@ -44,7 +44,7 @@
     }
 
     &__nav {
-        height: 100vh;
+        height: 0;
         width: 0;
         position: fixed;
         top: 0;
@@ -104,6 +104,7 @@
     }
 
     &__checkbox:checked ~ &__nav {
+        height: 100vh;
         width: 100vw;
         opacity: 1;
         visibility: visible;

@@ -1016,7 +1016,7 @@ body {
   }
 }
 .navigation__nav {
-  height: 100vh;
+  height: 0;
   width: 0;
   position: fixed;
   top: 0;
@@ -1063,6 +1063,7 @@ body {
   transform: scale(80);
 }
 .navigation__checkbox:checked ~ .navigation__nav {
+  height: 100vh;
   width: 100vw;
   opacity: 1;
   visibility: visible;
