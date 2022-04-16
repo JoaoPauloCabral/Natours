@@ -5,6 +5,7 @@ This is a study purpose repository. You can see it live [here](https://natours-j
 
 - HTML5
 - Sass (SCSS)
+- Advanced CSS techniques
 - Flexbox
 - Grid Layout
 - BEM css design pattern
